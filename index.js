@@ -18,7 +18,7 @@ var _ = {};
 _.identity = function(value){
 //CODE BELOW HERE
 
-
+return value;
 
 
 //CODE ABOVE HERE
@@ -46,6 +46,19 @@ _.identity = function(value){
 
 _.typeOf = function (value){
 //CODE BELOW HERE
+/*if(typeof value === 'string'){
+  return 'string'
+}
+console.log(typeof value)*/
+
+if(value === null) {
+return 'null'
+} else if Array.isArray(value)){
+  return 'array'
+} else {
+  return typeof value
+}
+
 
 
 
@@ -73,9 +86,12 @@ _.typeOf = function (value){
 
 _.first = function(array, number){
 //CODE BELOW HERE
-
-
-
+var outputArray = [];
 
 //CODE ABOVE HERE
 };
+
+
+
+
+
